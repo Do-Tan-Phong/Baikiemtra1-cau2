@@ -1,0 +1,28 @@
+{
+  "name": "number-verification-system",
+  "version": "1.0.0",
+  "description": "Hệ thống kiểm tra số cho máy địa chỉ ảo EVTM",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon --ignore public/ --ignore .env --delay 2.5 server.js",
+    "build": "tsc",
+    "watch": "tsc -w",
+    "price": "ts-node public/ronPriceFeed.ts"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "ethers": "^6.9.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "@types/node": "^20.0.0",
+    "@types/express": "^4.17.21",
+    "nodemon": "^3.0.2",
+    "ts-node": "^10.9.1"
+  },
+  "author": "",
+  "license": "ISC"
+}
